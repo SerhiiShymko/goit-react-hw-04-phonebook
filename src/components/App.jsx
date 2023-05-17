@@ -7,18 +7,6 @@ import Filter from 'components/Filter/Filter';
 import Message from 'components/Message/Message';
 import css from './App.module.css';
 
-// const useLocalStorage = (key, defaultValue) => {
-//   const [contacts, setContacts] = useState(() => {
-//     return JSON.parse(window.localStorage.getItem(key)) ?? defaultValue;
-//   });
-
-//   useEffect(() => {
-//     window.localStorage.setItem(key, JSON.stringify(contacts));
-//   }, [contacts, setContacts]);
-
-//   return [contacts, setContacts];
-// };
-
 export default function App() {
   const [contacts, setContacts] = useState([
     { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
